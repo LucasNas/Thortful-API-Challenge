@@ -12,18 +12,37 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@RequestMapping("/api/pokemon")
+@RequestMapping("/api")
 public class PokemonController {
 
     private final PokemonService pokemonService;
 
-    @GetMapping("/{pokemon}")
-    public ResponseEntity<String> findPokemonById(@PathVariable(value = "pokemon") String pokemon) {
-        try {
-            int id = Integer.parseInt(pokemon);
-            return ResponseEntity.ok(pokemonService.findPokemonById(id));
-        } catch (NumberFormatException nfe) {
-            return ResponseEntity.ok(pokemonService.findPokemonByName(pokemon));
-        }
+    @GetMapping("pokemon/{pokemon}")
+    public ResponseEntity<String> findPokemon(@PathVariable(value = "pokemon") String pokemon) {
+
+        return ResponseEntity.ok(pokemonService.findPokemon(pokemon));
+
+    }
+
+    @GetMapping("move/{move}")
+    public ResponseEntity<String> findPokemonMoves(@PathVariable(value = "move") String move) {
+
+        return ResponseEntity.ok(pokemonService.findMove(move));
+
+    }
+
+
+    @GetMapping("berry/{berry}")
+    public ResponseEntity<String> findPokemonBerries(@PathVariable(value = "berry") String berry) {
+
+        return ResponseEntity.ok(pokemonService.findBerry(berry));
+
+    }
+
+    @GetMapping("region/{region}")
+    public ResponseEntity<String> findPokemonRegion(@PathVariable(value = "region") String region) {
+
+        return ResponseEntity.ok(pokemonService.findRegion(region));
+
     }
 }
