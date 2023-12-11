@@ -11,18 +11,20 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ClearCacheService {
 
+    public static final String MIDNIGHT = "0 0 0 * * *";
+
     @CacheEvict(value = "pokemon", allEntries = true)
-    @Scheduled(cron = "0 0 0 * * *")
+    @Scheduled(cron = MIDNIGHT)
     public void clearPokemonCache() {
         log.info("Pokemon cache cleared");
     }
     @CacheEvict(value = "move", allEntries = true)
-    @Scheduled(cron = "0 0 0 * * *")
+    @Scheduled(cron = MIDNIGHT)
     public void clearMoveCache() {
         log.info("Move cache cleared");
     }
     @CacheEvict(value = "berry", allEntries = true)
-    @Scheduled(cron = "0 0 0 * * *")
+    @Scheduled(cron = MIDNIGHT)
     public void clearBerryCache() {
         log.info("Berry cache cleared");
     }
