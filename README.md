@@ -5,13 +5,13 @@ This project provides a simple API for retrieving and displaying information abo
 
 Building the Project<br />
 Open a terminal window and navigate to the project's root directory.
-Execute the following command to build the project:
-mvn clean install
+Execute the following command to build the project:<br />
+mvn clean install<br />
 This will compile the code, run the tests, and package it into a JAR file.
 
 Running the Project<br />
-Once the project is built, start the Spring Boot application using the command:
-mvn spring-boot:run
+Once the project is built, start the Spring Boot application using the command:<br />
+mvn spring-boot:run<br />
 This will launch the Spring Boot application, exposing the API at http://localhost:8080/.
 
 API Endpoints
