@@ -1,6 +1,5 @@
 # Thortful-API-Challenge
-PokéAPI Data Retriever
-This project provides a simple API for retrieving and displaying information about Pokémon from the PokéAPI. It utilizes the Spring Boot framework and the RestTemplate library to interact with the PokéAPI.
+This project is a simple API that retrieves and displays information about Pokémon from the PokéAPI: https://pokeapi.co/. It uses the Spring Boot framework and the RestTemplate library to make HTTP requests to the PokéAPI.
 
 
 Building the Project<br />
