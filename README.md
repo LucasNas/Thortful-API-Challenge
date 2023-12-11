@@ -1,36 +1,8 @@
 # Thortful-API-Challenge
-
-About the project
-
-This project is a simple API that retrieves and displays information about Pokémon from the PokéAPI: https://pokeapi.co/. It uses the Spring Boot framework and the RestTemplate library to make HTTP requests to the PokéAPI.
-
-
-Building the project
-
-Open a terminal window and navigate to the root directory of the project.
-Use the following command to build the project:
-mvn clean install
-This will compile the project's code, run the tests, and package the project into a JAR file.
-
-Running the project
-
-Once the project has been built, you can run it using the following command:
-mvn spring-boot:run
-This will start the Spring Boot application and the API will be available at http://localhost:8080/.
-
-Accessing the API
-
-
-Sure, here is a README file in a more formatted way:
-
 PokéAPI Data Retriever
 This project provides a simple API for retrieving and displaying information about Pokémon from the PokéAPI. It utilizes the Spring Boot framework and the RestTemplate library to interact with the PokéAPI.
 
-Prerequisites
-To build and run the project, you'll need the following:
 
-Java 11 or higher
-Maven 3.6 or higher
 Building the Project
 Open a terminal window and navigate to the project's root directory.
 Execute the following command to build the project:
