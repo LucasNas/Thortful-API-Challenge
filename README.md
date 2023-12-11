@@ -16,12 +16,12 @@ This will launch the Spring Boot application, exposing the API at http://localho
 API Endpoints
 The API provides access to the following endpoints:
 
-GET /pokemon/{name or id}: Retrieves information about a specific Pokémon based on its name.<br />
-GET /moves/{name or id}: Fetches details about a specific move identified by its name.<br />
-GET /berries/{name or id}: Extracts information about a specific berry specified by its name.<br />
-GET /regions/{name or id}: Accesses data related to a particular region identified by its name.<br />
+GET /pokemon/{name or id}: Retrieves information about a specific Pokémon based on its name or id.<br />
+GET /moves/{name or id}: Fetches details about a specific move identified by its name or id.<br />
+GET /berries/{name or id}: Extracts information about a specific berry specified by its name or id.<br />
+GET /regions/{name or id}: Accesses data related to a particular region identified by its name or id.<br />
 
-To utilize these endpoints, replace {name or id} with the actual name of the Pokémon, move, berry, or region you're interested in.
+To utilize these endpoints, replace {name or id} with the actual name or id of the Pokémon, move, berry, or region you're interested in.
 
 
 
