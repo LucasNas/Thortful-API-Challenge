@@ -3,13 +3,13 @@ PokéAPI Data Retriever
 This project provides a simple API for retrieving and displaying information about Pokémon from the PokéAPI. It utilizes the Spring Boot framework and the RestTemplate library to interact with the PokéAPI.
 
 
-Building the Project
+Building the Project<br />
 Open a terminal window and navigate to the project's root directory.
 Execute the following command to build the project:
 mvn clean install
 This will compile the code, run the tests, and package it into a JAR file.
 
-Running the Project
+Running the Project<br />
 Once the project is built, start the Spring Boot application using the command:
 mvn spring-boot:run
 This will launch the Spring Boot application, exposing the API at http://localhost:8080/.
