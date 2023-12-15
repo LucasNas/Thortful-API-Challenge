@@ -1,5 +1,6 @@
 package com.thortful.apichallenge.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.thortful.apichallenge.service.PokemonService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,7 +23,7 @@ class PokemonControllerTest {
     private PokemonController pokemonController;
 
     @Test
-    void findPokemon() {
+    void findPokemon() throws JsonProcessingException {
 
         String pokemonName = "pikachu";
         String expectedResponse = "Pikachu data from PokeAPI";
@@ -37,7 +38,7 @@ class PokemonControllerTest {
     }
 
     @Test
-    void findPokemonMoves() {
+    void findPokemonMoves() throws JsonProcessingException {
 
         String moveName = "thunderbolt";
         String expectedMoveResponse = "Thunderbolt data from PokeAPI";
@@ -50,7 +51,7 @@ class PokemonControllerTest {
     }
 
     @Test
-    void findPokemonBerries() {
+    void findPokemonBerries() throws JsonProcessingException {
         String berryName = "oran";
         String expectedResponse = "Oran Berry data from PokeAPI";
 
@@ -64,7 +65,7 @@ class PokemonControllerTest {
     }
 
     @Test
-    void findPokemonRegion() {
+    void findPokemonRegion() throws JsonProcessingException {
         String regionName = "kanto";
         String expectedResponse = "Kanto region data from PokeAPI";
 

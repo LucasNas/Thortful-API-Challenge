@@ -1,5 +1,6 @@
 package com.thortful.apichallenge.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -23,7 +24,7 @@ class PokemonServiceTest {
 
 
     @Test
-    void findPokemon() {
+    void findPokemon() throws JsonProcessingException {
         String pokemonName = "pikachu";
         String expectedResponse = "Pikachu data from PokeAPI";
 
@@ -38,7 +39,7 @@ class PokemonServiceTest {
     }
 
     @Test
-    void findMove() {
+    void findMove() throws JsonProcessingException {
         String moveName = "thunderbolt";
         String expectedResponse = "Thunderbolt data from PokeAPI";
 
@@ -53,7 +54,7 @@ class PokemonServiceTest {
     }
 
     @Test
-    void findBerry() {
+    void findBerry() throws JsonProcessingException {
         String berryName = "oran";
         String expectedResponse = "Oran Berry data from PokeAPI";
 
@@ -67,7 +68,7 @@ class PokemonServiceTest {
     }
 
     @Test
-    void findRegion() {
+    void findRegion() throws JsonProcessingException {
         String regionName = "kanto";
         String expectedResponse = "Kanto region data from PokeAPI";
 

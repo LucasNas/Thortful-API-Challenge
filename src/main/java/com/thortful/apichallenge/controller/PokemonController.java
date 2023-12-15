@@ -1,5 +1,6 @@
 package com.thortful.apichallenge.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.thortful.apichallenge.service.PokemonService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,14 +19,14 @@ public class PokemonController {
     private final PokemonService pokemonService;
 
     @GetMapping("pokemon/{pokemon}")
-    public ResponseEntity<String> findPokemon(@PathVariable(value = "pokemon") String pokemon) {
+    public ResponseEntity<String> findPokemon(@PathVariable(value = "pokemon") String pokemon) throws JsonProcessingException {
 
         return ResponseEntity.ok(pokemonService.findPokemon(pokemon));
 
     }
 
     @GetMapping("move/{move}")
-    public ResponseEntity<String> findPokemonMoves(@PathVariable(value = "move") String move) {
+    public ResponseEntity<String> findPokemonMoves(@PathVariable(value = "move") String move) throws JsonProcessingException {
 
         return ResponseEntity.ok(pokemonService.findMove(move));
 
@@ -33,14 +34,14 @@ public class PokemonController {
 
 
     @GetMapping("berry/{berry}")
-    public ResponseEntity<String> findPokemonBerries(@PathVariable(value = "berry") String berry) {
+    public ResponseEntity<String> findPokemonBerries(@PathVariable(value = "berry") String berry) throws JsonProcessingException {
 
         return ResponseEntity.ok(pokemonService.findBerry(berry));
 
     }
 
     @GetMapping("region/{region}")
-    public ResponseEntity<String> findPokemonRegion(@PathVariable(value = "region") String region) {
+    public ResponseEntity<String> findPokemonRegion(@PathVariable(value = "region") String region) throws JsonProcessingException {
 
         return ResponseEntity.ok(pokemonService.findRegion(region));
 
